@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+<title>Page Title</title>
+    <style>
+        td{
+             text-align: center;
+             width:50px;
+           height:50px;
+            font-size: 3em;
+        }
+        .lr{
+            border-left:1px solid black;
+            border-right:1px solid black;
+  width:100px;
+     height:100px;
+}
+        .fb
+        {
+            
+            border:1px solid black;
+  width:100px;
+     height:100px;
+        }
+        .ub{
+            border-top:1px solid black;
+            border-bottom:1px solid black;
+  width:100px;
+     height:100px;
+}
+</style>
+</head>
+<body>
+    <center class="text-primary" ><h1>Tic Tac Toe</h1>
+  <table >
+  <tr>
+    <td></td>
+    <td class="lr"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ub"></td>
+    <td class="fb"></td>
+    <td class="ub"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="lr"></td>
+      
+    <td></td>
+  </tr>
+</table>
+       </center>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+    <script>
+         var isX= true;
+        var arr=new Array(3);
+        arr[0]=new Array(3);
+        arr[1]=new Array(3);
+       arr[2]=new Array(3);
+
+    $("td").click(function()
+                  {
+        var c=$(this).index();
+        var r=$(this).parent().index();
+                  //alert(r+" "+c);
+               //$(this).text("x");
+        if(isX == true)
+            {
+                $(this).text("x");
+                arr[r][c]='x';
+                isX=!isX;
+            }
+        else
+            {
+                $(this).text("0");
+                arr[r][c]='0';
+                isX=!isX; 
+            }
+        for(var i=0;i<3;i++)
+            {
+                var str="";
+                for(var j=0;j<3;j++)
+                    str+=arr[i][j]+" ";
+            }
+        console.log(str);
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+<title>Page Title</title>
+    <style>
+        .lr{
+            border-left:1px solid black;
+            border-right:1px solid black;
+  width:50px;
+     height:50px;
+}
+        .fb
+        {
+            
+            border:1px solid black;
+  width:50px;
+     height:50px;
+        }
+        .ub{
+            border-top:1px solid black;
+            border-bottom:1px solid black;
+  width:50px;
+     height:50px;
+}
+</style>
+</head>
+<body>
+    <center class="text-primary" ><h1>Tic Tac Toe</h1>
+  <table >
+  <tr>
+    <td></td>
+    <td class="lr"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="ub"></td>
+    <td class="fb"></td>
+    <td class="ub"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="lr"></td>
+    <td></td>
+  </tr>
+</table>
+       </center>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+    <script>
+    $("td").click(function()
+                  {
+                  alert("clicked");
+        })
+    </script>
+    
+</body>
+</html>
