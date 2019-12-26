@@ -1,0 +1,19 @@
+{
+  "name": "bheerender-bzzz",
+  "version": "1.0.0",
+  "description": "MEAN FULL Dev-WEEK-2",
+  "main": "index.js",
+  "scripts": {
+ "start":"node index.js",   "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BHEERENDER/bheerender-bzzz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BHEERENDER/bheerender-bzzz/issues"
+  },
+  "homepage": "https://github.com/BHEERENDER/bheerender-bzzz#readme"
+}
